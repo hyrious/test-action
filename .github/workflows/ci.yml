@@ -4,9 +4,5 @@ jobs:
   test:
     runs-on: windows-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Setup Node
-        uses: actions/setup-node@v2
       - name: Test
-        run: npm test
+        run: ruby -v
