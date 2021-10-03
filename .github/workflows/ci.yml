@@ -2,7 +2,7 @@ name: Test Node Process on Windows
 on: [push]
 jobs:
   test:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Test
         run: ruby -v
