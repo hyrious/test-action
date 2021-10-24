@@ -1,10 +1,12 @@
-name: Test on Windows
+name: Test on Ubuntu
 on: [push]
 jobs:
   test:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2.3.4
       - name: Test
-        run: ruby test.rb
+        run: >-
+          gem --version
+          gem install kramdown
